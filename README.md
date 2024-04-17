@@ -1,4 +1,4 @@
-# samvel-sargsyan-match-game
+# Samvel Sargsyan SCSS BEM Project
 
 ## Project setup
 ```
