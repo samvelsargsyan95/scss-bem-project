@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samvel Sargsyan SCSS BEM Project</title>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <main class="container p-2">
+        <header class="header d-flex-between">
+            <div class="d-flex align-center">
+                <!-- header logo -->
+                <figure class="header__logo-cont d-flex-center" aria-labelledby="league-title">
+                    <img src="./src/images/header-logo.png" alt="European Pro League Season 13 Logo">
+                </figure>    
+
+                <!-- header title -->
+                <h1 id="league-title" class="header__title text-white">European Pro League Season 13</h1>
+                
+                <!-- header active circle -->
+                <div class="active-circle d-flex-center">
+                    <span></span>
+                </div>
+            </div> 
+
+            <!-- header icons -->
+            <div class="header__right-icons d-flex-between">
+                <a href="#" aria-label="Favorite icon">
+                    <i class="fa-regular fa-star star text-light-grey"></i>
+                </a>
+                <a href="#" aria-label="Up icon">   
+                    <i class="fa-solid fa-angles-up up text-light-grey"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- matchs -->
+        <section class="match mb-2">
+            <div class="match__team d-flex-between mx-3">
+                <!-- match left player -->
+                <div class="d-flex-start match__team--name-cont">
+                    <figure 
+                        class="match__team--player-logo me-3"
+                        aria-labelledby="league-movistar"
+                    >
+                        <img 
+                            class="w-100 h-100"
+                            src="./src/images/Movistar-logo.png" 
+                            title="Movistar Logo" 
+                            alt="Movistar Logo"
+                        >
+                    </figure>
+                        
+                    <span 
+                        id="league-movistar" 
+                        class="match__team--name text-white"
+                    >Movistar</span>
+                </div>
+
+                <!-- match score -->
+                <div class="d-flex-center text-purple match__team--score text-bold">
+                    <span>0</span>
+                    <span class="mx-2">-</span>
+                    <span>1</span>
+                </div>
+
+                 <!-- match right player -->
+                <div class="d-flex-end match__team--name-cont">
+                    <span id="league-rnl-roar" class="match__team--name text-white me-3">RNL Roar</span>
+
+                    <figure
+                        aria-labelledby="league-rnl-roar"
+                        class="match__team--player-logo"
+                    >
+                        <img 
+                            class="w-100 h-100"
+                            src="./src/images/RNL-Roar-logo.png" 
+                            title="RNL Roar Logo" 
+                            alt="RNL Roar Logo"
+                        >
+                    </figure>
+                    
+                </div>
+
+            </div>
+
+            <hr class="my-3" />
+
+            <!-- match bet -->
+            <div class="match__bet d-flex-between">
+                <!-- bet left arrow -->
+                <a href="#" aria-label="Left Icon">
+                    <i class="fa-solid fa-chevron-left text-light-grey"></i>
+                </a>
+
+                <!-- bet left option -->
+                <div class="match__bet--left-option d-flex justify-between flex-column">
+                    <span class="match__bet--label text-grey">Win1</span>
+                    <span class="match__bet--label text-white">2</span>
+                </div>
+
+                <!-- bet middle -->
+                <div class="d-flex-center text-purple match__team--score text-bold">
+                    <span>VS</span>
+                </div>
+
+                <!-- bet right option -->
+                <div class="match__bet--right-option d-flex justify-between flex-column">
+                    <span class="match__bet--label text-grey">Win2</span>
+                    <span class="match__bet--label text-white">10.5</span>
+                </div>
+
+                <!-- bet right arrow -->
+                <a href="#" aria-label="Right Icon">
+                    <i class="fa-solid fa-chevron-right text-light-grey"></i>
+                </a>
+            </div>
+
+            <!-- match footer -->
+            <div class="d-flex-between my-3">
+                <div class="d-flex-between w-max-content">
+                    <div class="active-circle d-flex-center">
+                        <span></span>
+                    </div>
+
+                    <span class="match__odds-txt text-light-grey mx-3">M2</span>
+                    <span class="match__odds-txt text-white">22 - 8</span>
+                </div>
+
+                <div class="d-flex-between w-max-content">
+                    <a 
+                        href="#" 
+                        class="me-3" 
+                        aria-label="Favorite Icon"
+                    >
+                        <i class="fa-solid fa-star star text-purple"></i>
+                    </a>
+
+                    <span class="match__odds-txt text-light-grey">+103</span>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="match mb-2">
+            <div class="match__team d-flex-between mx-3">
+                <!-- match left player -->
+                <div class="d-flex-start match__team--name-cont">
+                    <figure 
+                        aria-labelledby="league-unicorns"
+                        class="match__team--player-logo me-3"
+                    >
+                        <img 
+                            class="w-100 h-100 "
+                            src="./src/images/Unicorns-logo.png" 
+                            title="Unicorns Logo" 
+                            alt="Unicorns Logo"
+                        >
+                    </figure>
+                        
+                    <span 
+                        id="league-unicorns" 
+                        class="match__team--name text-white"
+                    >Unicorns</span>
+                </div>
+
+                <!-- match score -->
+                <div class="d-flex-center text-purple match__team--score text-bold">
+                    <!-- <span>0</span>
+                    <span class="mx-2">-</span>
+                    <span>1</span> -->
+                </div>
+
+                 <!-- match right player -->
+                <div class="d-flex-end match__team--name-cont">
+                    <span class="match__team--name text-white me-3">Gam Esport</span>
+
+                    <figure class="match__team--player-logo">
+                        <img 
+                            class="w-100 h-100"
+                            src="./src/images/GAM-Esports-logo.png" 
+                            title="Gam Esport Logo" 
+                            alt="Gam Esport Logo"
+                        >
+                    </figure>
+                    
+                </div>
+
+            </div>
+
+            <hr class="my-4" />
+
+            <!-- match bet -->
+            <div class="match__bet d-flex-between">
+                <!-- bet left arrow -->
+                <a href="#" aria-label="Left Icon">
+                    <i class="fa-solid fa-chevron-left text-light-grey"></i>
+                </a>
+
+                <!-- bet left option -->
+                <div class="match__bet--left-option d-flex justify-between flex-column">
+                    <span class="match__bet--label text-grey">Win1</span>
+                    <span class="match__bet--label text-white">2.5</span>
+                </div>
+
+                <!-- bet middle -->
+                <div class="d-flex-center text-purple match__team--score text-bold">
+                    <span>VS</span>
+                </div>
+
+                <!-- bet right option -->
+                <div class="match__bet--right-option d-flex justify-between flex-column">
+                    <span class="match__bet--label text-grey">Win2</span>
+                    <span class="match__bet--label text-white">1.07</span>
+                </div>
+
+                <!-- bet right arrow -->
+                <a href="#" aria-label="Right Icon">
+                    <i class="fa-solid fa-chevron-right text-light-grey"></i>
+                </a>
+            </div>
+
+            <!-- match footer -->
+            <div class="d-flex-between my-3">
+                <div class="d-flex-between w-max-content">
+                    <span class="match__odds-txt text-light-grey mx-3">17.08.23</span>
+                    <span class="match__odds-txt text-white">15:35</span>
+                </div>
+
+                <div class="d-flex-between w-max-content">
+                    <a href="#" class="me-3" aria-label="Favorite Icon">
+                        <i class="fa-solid fa-star star text-purple"></i>
+                    </a>
+
+                    <span class="match__odds-txt text-light-grey">+61</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
